@@ -1,10 +1,10 @@
 - [my first heading](#my-online-store)
-  - [about the project](#about-the-project
+  - [about the project](#about-the-project)
   - [why is it important](#why-is-it-important)
   - [what it does](#what-it-does)
   - [add items to cart](#add-items-to-cart)
   - [form to get user input](#form-to-get-user-input)
-  - [Apply promo code](#apply-a-promo-code]
+  - [Apply promo code](#apply-a-promo-code)
 
 ## My online store:
 
