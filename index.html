@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+        $("#hide").click(function(){
+            $("p").hide();
+        });
+        $("#show").click(function(){
+            $("p").show();
+        });
+    });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+<body onload="alertMe()">
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2> SHOP</h2>
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>    
+            </ul>
+        </nav>
+    </header>
+<div class="container">
+<div class="image">
+    <img src="images/pinkpallet.jpeg" class="box"alt="thsirt1" length="200" width="200">
+    <h3> Pink Pallet</h3>
+    <h3>R400.00</h3>
+    <a class="add-cart cart1" href="#">Add Cart</a>
+</div>
+<div class="image">
+    <img src="images/roseblush.jpeg" alt="thsirt1"length="200" width="200">
+    <h3> Rosé Blush</h3>
+    <h3>R300.00</h3>
+    <a class="add-cart cart2" href="#">Add Cart</a>
+</div>
+<div class="image">
+    <img src="images/nudeconcealer.jpeg" alt="thsirt1" length="200" width="200">
+    <h3> Nude Concealer</h3>
+    <h3>R350.00</h3>
+    <a class="add-cart cart3" href="#">Add Cart</a>
+</div>
+<div class="image">
+    <img src="images/liquidliner.jpeg" alt="thsirt1"length="300" width="150">
+    <h3> Liquid Liner</h3>
+    <h3>R180.00</h3>
+    <a class="add-cart cart4" href="#">Add Cart</a>
+</div>
+
+
+</div>
+<h2>SHOW PROMO CODE:</h2>
+<p id="p1">KD20</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<br>
+<br>
+<div class="grid_12 coupon">
+    <h3>Apply Coupon</h3>
+    <input class="coupon-input" id="coupon" type="text">
+    <button class="apply" onclick="saveData()">Apply</button>
+    </div>
+
+
+
+
+
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

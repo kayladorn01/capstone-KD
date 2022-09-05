@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+            $(document).ready(function() {
+        setInterval(changecolors, 4000);
+
+    var counter = 0;
+    function changecolors() {
+            var colors = ["pink", "grey"];
+                if (counter < colors.length) {
+                $("body").css("background-color", colors[counter], 1000);
+                console.log("Counter: " + counter + " Colors Length: " + colors.length + " Colors: " + colors);
+                counter++;
+            } else {
+                counter = 0;
+            }
+            console.log(colors.length);
+    }
+        changecolors();
+    });
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2> CART</h2>
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>    
+            </ul>
+        </nav>
+    </header>
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCTS</h5>
+            <h5 class="total">TOTAL</h5>
+            <h5 class="total"></h5>
+        </div>
+        <div class="products">
+            
+        </div>
+        <button class="check1" onclick="rGen()" >check out</button>
+    </div>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
